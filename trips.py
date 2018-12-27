@@ -1,5 +1,6 @@
 import discord
 import asyncio
+import webbrowser
 
 client = discord.Client()
 
@@ -14,7 +15,7 @@ async def on_ready():
 
 def private_message(message):
 	print("This is a private message, and will be taken very seriously")	
-	
+	webbrowser.open("https://www.youtube.com/watch?v=jJ6GPabvSfY");
 	if(len(message.attachments) > 0):
 		print("Number of attachments: %s" % len(message.attachments))
 		print(message.attachments[0])
